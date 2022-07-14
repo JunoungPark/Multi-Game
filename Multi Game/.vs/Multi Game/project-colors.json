@@ -5,7 +5,17 @@
       "ProjectGuid": "abc1f8f3-31a6-0149-a1c8-39f5537b34a3",
       "DisplayName": "Assembly-CSharp",
       "ColorIndex": 0
+    },
+    "1de2feba-1d12-8114-1266-5b048f0221ca": {
+      "ProjectGuid": "1de2feba-1d12-8114-1266-5b048f0221ca",
+      "DisplayName": "PlayFabEditorExtensions",
+      "ColorIndex": 1
+    },
+    "a690d167-b34f-497a-97da-88e39fec1f76": {
+      "ProjectGuid": "a690d167-b34f-497a-97da-88e39fec1f76",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 3
 }

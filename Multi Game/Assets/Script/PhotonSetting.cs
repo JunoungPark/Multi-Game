@@ -9,39 +9,58 @@ using PlayFab.ClientModels;
 public class PhotonSetting : MonoBehaviour
 {
     public InputField region;
-    public InputField email;
-    public InputField password;
+    public InputField loginEmail;
+    public InputField loginPassword;
+    public InputField signupEmail;
+    public InputField signupPassword;
     public InputField username;
-    
+    public Canvas login;
+    public Canvas signup;
 
     public void LoginSuccess(LoginResult result)
     {
         PhotonNetwork.GameVersion = "1.0f";
-        PhotonNetwork.NickName = username.text;
+        //PhotonNetwork.NickName = username.text;
         PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion = region.text;
         PhotonNetwork.LoadLevel("Photon Lobby");
     }
     public void LoginFailure(PlayFabError error)
     {
-        Debug.Log("∑Œ±◊¿Œ Ω«∆–");
+        Debug.Log("Î°úÍ∑∏Ïù∏ Ïã§Ìå®");
     }
     public void SignUpSuccess(RegisterPlayFabUserResult result)
     {
-        Debug.Log("»∏ø¯ ∞°¿‘ º∫∞¯");
+        Debug.Log("ÌöåÏõê Í∞ÄÏûÖ ÏÑ±Í≥µ");
+        signup.gameObject.SetActive(false);
+        login.gameObject.SetActive(true);
+        
     }
     public void SignUpFailure(PlayFabError error)
     {
-        Debug.Log("»∏ø¯ ∞°¿‘ Ω«∆–");
+        Debug.Log("ÌöåÏõê Í∞ÄÏûÖ Ïã§Ìå®");
     }
+
+    public void Createaccount()
+    {
+        login.gameObject.SetActive(false);
+        signup.gameObject.SetActive(true);
+    }
+
+    public void Letlogin()
+    {
+        signup.gameObject.SetActive(false);
+        login.gameObject.SetActive(true);
+    }
+
     public  void SignUp()
     {
-        var request = new RegisterPlayFabUserRequest { Email = email.text, Password = password.text, Username = username.text };
+        var request = new RegisterPlayFabUserRequest { Email = signupEmail.text, Password = signupPassword.text, Username = username.text };
 
         PlayFabClientAPI.RegisterPlayFabUser(request, SignUpSuccess, SignUpFailure);
     }
     public void Login()
     {
-        var request = new LoginWithEmailAddressRequest { Email = email.text, Password = password.text };
+        var request = new LoginWithEmailAddressRequest { Email = loginEmail.text, Password = loginPassword.text };
 
         PlayFabClientAPI.LoginWithEmailAddress(request, LoginSuccess, LoginFailure);
     }
