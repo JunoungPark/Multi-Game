@@ -2425,7 +2425,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New to Game? Create an account.
+  m_Text: Already have an account? Log in
 --- !u!222 &1497488966
 CanvasRenderer:
   m_ObjectHideFlags: 0
