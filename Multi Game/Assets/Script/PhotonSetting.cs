@@ -20,7 +20,7 @@ public class PhotonSetting : MonoBehaviour
     public void LoginSuccess(LoginResult result)
     {
         PhotonNetwork.GameVersion = "1.0f";
-        //PhotonNetwork.NickName = username.text;
+        PhotonNetwork.NickName = "junyoung";
         PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion = region.text;
         PhotonNetwork.LoadLevel("Photon Lobby");
     }

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: PlayFabSharedSettings
   m_EditorClassIdentifier: 
   TitleId: D1C88
-  DeveloperSecretKey: S5FP7R8R6A5ZNY7MNBDQ454JHB7493EDFDIFN1MFIA3GYT5473
+  DeveloperSecretKey: 
   ProductionEnvironmentUrl: 
-  RequestType: 2
+  RequestType: 0
   DisableDeviceInfo: 0
   DisableFocusTimeCollection: 0
   RequestTimeout: 2000

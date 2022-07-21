@@ -11,9 +11,4 @@ public class GameManager : MonoBehaviourPun
         PhotonNetwork.Instantiate("Character", new Vector3(Random.Range(0, 5), 1, Random.Range(0, 5)), Quaternion.identity);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

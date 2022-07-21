@@ -15,7 +15,12 @@
       "ProjectGuid": "a690d167-b34f-497a-97da-88e39fec1f76",
       "DisplayName": "Solution Items",
       "ColorIndex": 2
+    },
+    "2fb3c109-5711-579a-1a17-101f1b0cc219": {
+      "ProjectGuid": "2fb3c109-5711-579a-1a17-101f1b0cc219",
+      "DisplayName": "PhotonVoice",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }
